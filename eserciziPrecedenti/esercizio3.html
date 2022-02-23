@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script type="text/javascript" src="esercizio3.js"></script>
+    </head>
+    <body>
+        <form method="post" name="form" action="">
+            <input type="text" maxlength="50" name="nominativo" placeholder="inserisci nome e cognome" onchange="checkNomeCognome()" onclick="nominativoNotBlank()">
+            <br>
+            <label for="sesso">Sesso</label>
+
+            <input type="radio" value="M" name="sesso" id="M" onclick="check=this.value;">
+            <label for="M">M</label>
+            <input type="radio" value="F" name="sesso" id ="F" onclick="check=this.value;">
+            <label for="F">F</label>
+            <br>
+            <select name="ateneo">
+                <option value="selected" selected>Selezionare universita'</option>
+                <option value="Roma3">Roma3</option>
+                <option value="La Sapienza">La Sapienza</option>
+                <option value="Tor Vergata">Tor Vergata</option>
+            </select>
+            <br>
+            <input type="text" maxlength="5" placeholder="CAP" name="cap" onchange="checkCap()">
+            <br>
+            <label for="Studente">Studente</label>
+            <input type="checkbox" value="studente" name="studente">
+            <br>
+            <label for="lavoratore">Lavoratore</label>
+            <input type="checkbox" value="lavoratore" name="lavoratore">
+            <br>
+            <textarea name="descrizione" placeholder="descrizione lavoro" maxlength="80"></textarea>
+            <br>
+            <input type="submit" onclick="checkSesso()">
+            <input type="reset">
+        </form>
+    </body>
+</html>

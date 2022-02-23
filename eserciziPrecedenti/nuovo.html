@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Questionario</title>
+
+        <link rel="stylesheet" href="./nuovo2.css" type="text/css">
+    </head>
+    <body>
+        <form action="post">
+            <input type="text" maxlength="40" placeholder="cognome" id="a1" required>
+            <br>
+            <input type="text" maxlength="30" placeholder="nome" id="a1" required>
+            <br>
+            <input type="number" size="7" min="0" max="1234567" placeholder="matricola" id="a1" required>
+            <br>
+            <select name="Regione" required>Regione
+                <option Value="Lazio">Lazio</option>
+                <option Value="Marche">Marche</option>
+                <option Value="Toscana">Toscana</option>
+            </select>
+            <br>
+            <input type="text" maxlength="30" minlength="30" placeholder="indirizzo email" id="a1" required>
+            <br>
+            <input type="number" maxlength="16" placeholder="Recapito Telefonico" required>
+            <br>
+            <select name="Status" required>Stato
+                <option value="in corso">In Corso</option>
+                <option value="fuori corso">Fuori Corso</option>
+                <option value="ripetente">Ripetente</option>
+                <option value="part-time">Part-Time</option>
+            </select>
+            <br>
+            <textarea name="Richieste Particolari" cols="60" rows="12" placeholder="Richieste Particolari"></textarea>
+            <br>
+            <input type="submit" value="Invia">
+            <input type="reset" value="Reset">
+
+
+
+
+
+        </form>
+    </body>
+</html>
