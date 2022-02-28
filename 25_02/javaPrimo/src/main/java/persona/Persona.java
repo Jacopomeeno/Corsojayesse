@@ -23,6 +23,7 @@ public class Persona {
 public String getResidenza() {
     return Residenza;
 }
+
 public void setResidenza (String nuovaResidenza) {
     Residenza = nuovaResidenza;
 }
